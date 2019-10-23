@@ -1,0 +1,26 @@
+#ifndef Header_h
+#define Header_h
+
+#include "base.hpp"
+
+class Add: public Base{
+private:
+    Op *val1, *val2;
+public:
+    
+    Add(Base *val1,Base *val2){
+	Base();
+        this->val1 = val1;
+        this->val2 = val2;
+    }
+    
+    double evalute(){
+        return val1+val2;
+    }
+    
+    string stringify(){
+        std::string newString = val1 + "+" + val2;
+        return std::newString;
+    }
+
+#endif /* Header_h */

@@ -11,20 +11,16 @@ string
 -
 
 /home/csmajs/cloez001/lab-04/lab-04-composite-pattern-flannel/op.hpp
+string
+-
 base.hpp
 /home/csmajs/cloez001/lab-04/lab-04-composite-pattern-flannel/base.hpp
 
-/home/csmajs/cloez001/lab-04/lab-04-composite-pattern-flannel/op_test.hpp
-gtest/gtest.h
-/home/csmajs/cloez001/lab-04/lab-04-composite-pattern-flannel/gtest/gtest.h
+/home/csmajs/cloez001/lab-04/lab-04-composite-pattern-flannel/unit_test.cpp
 op.hpp
 /home/csmajs/cloez001/lab-04/lab-04-composite-pattern-flannel/op.hpp
-
-/home/csmajs/cloez001/lab-04/lab-04-composite-pattern-flannel/unit_test.cpp
 gtest/gtest.h
 /home/csmajs/cloez001/lab-04/lab-04-composite-pattern-flannel/gtest/gtest.h
-op_test.hpp
-/home/csmajs/cloez001/lab-04/lab-04-composite-pattern-flannel/op_test.hpp
 
 googletest/googletest/include/gtest/gtest-death-test.h
 gtest/internal/gtest-death-test-internal.h

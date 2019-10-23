@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/csmajs/cloez001/lab-04/lab-04-composite-pattern-flannel/Add.hpp
+base.hpp
+/home/csmajs/cloez001/lab-04/lab-04-composite-pattern-flannel/base.hpp
+
+/home/csmajs/cloez001/lab-04/lab-04-composite-pattern-flannel/base.hpp
+string
+-
+
+/home/csmajs/cloez001/lab-04/lab-04-composite-pattern-flannel/main.cpp
+iostream
+-
+string
+-
+base.hpp
+/home/csmajs/cloez001/lab-04/lab-04-composite-pattern-flannel/base.hpp
+op.hpp
+/home/csmajs/cloez001/lab-04/lab-04-composite-pattern-flannel/op.hpp
+Add.hpp
+/home/csmajs/cloez001/lab-04/lab-04-composite-pattern-flannel/Add.hpp
+
+/home/csmajs/cloez001/lab-04/lab-04-composite-pattern-flannel/op.hpp
+string
+-
+base.hpp
+/home/csmajs/cloez001/lab-04/lab-04-composite-pattern-flannel/base.hpp
+
