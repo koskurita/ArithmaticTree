@@ -1,27 +1,27 @@
-#ifndef Header_h
-#define Header_h
+#ifndef __ADD_HPP__
+#define __ADD_HPP__
 
 #include "base.hpp"
 
 
 class Add: public Base{
 private:
-    double num1, num2;
+	double num1, num2;
 public:
     
-    Add(Base *val1,Base *val2): Base(){
-        num1 = val1->evaluate();
-        num2 = val2->evaluate();
-    }
+	Add(Base *val1,Base *val2): Base(){
+		num1 = val1->evaluate();
+        	num2 = val2->evaluate();
+    	}	
     
-   virtual double evaluate(){
-        return num1 + num2;
-    }
+   	virtual double evaluate(){
+        	return num1 + num2;
+   	}
     
-    virtual std::string stringify(){
-        std::string newString;
-	newString = std::to_string(num1) + "+" + std::to_string(num2);
-        return newString;
-    }
+  	virtual std::string stringify(){
+   		std::string newString;
+		newString = std::to_string(num1) + "+" + std::to_string(num2);
+       		return newString;
+    	}
 };
-#endif /* Header_h */
+#endif // __ADD_HPP__

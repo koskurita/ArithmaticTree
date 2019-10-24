@@ -1,7 +1,6 @@
-#ifndef __Op_HPP__
-#define __Op_HPP__
+#ifndef __OP_HPP__
+#define  __OP_HPP__
 
-#include <string>
 #include "base.hpp"
 
 class Op : public Base {
@@ -13,4 +12,4 @@ public:
         virtual std::string stringify() { return std::to_string(value); }
 };
 
-#endif //__Op_HPP__
+#endif //__OP_HPP__

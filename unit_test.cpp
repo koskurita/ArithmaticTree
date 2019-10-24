@@ -1,18 +1,24 @@
 #include "op.hpp"
+#include "op_test.hpp"
+#include "Add.hpp"
+
 #include "gtest/gtest.h"
 
-//TEST (OpTest, OpValue) {
-       	//Base *three = new Op(3);
-	//double numRetrieved = three->evaluate();
-        //EXPECT_EQ(3, 3);
 
-//}
-//
-TEST(One, Two){
-	Base *three = new Op(3);
-	double numDouble = 3;
-	EXPECT_EQ(numDouble, three->evaluate());
+
+TEST(OpTest, numThree){
+        Base *opNum = new Op(3);
+        EXPECT_EQ(3, opNum->evaluate());
+	delete opNum;
 }
+
+
+TEST(OpTest, NumNotThree){
+	Base *opNum = new Op(3);
+	EXPECT_EQ(4, opNum->evaluate());
+	delete opNum;
+}
+
 
 int main(int argc, char **argv) {
   ::testing::InitGoogleTest(&argc, argv);
