@@ -3,9 +3,9 @@
 
 CMakeFiles/test.dir/unit_test.cpp.o
  /home/csmajs/cloez001/lab-04/lab-04-composite-pattern-flannel/Add.hpp
+ /home/csmajs/cloez001/lab-04/lab-04-composite-pattern-flannel/Div.hpp
  /home/csmajs/cloez001/lab-04/lab-04-composite-pattern-flannel/base.hpp
  /home/csmajs/cloez001/lab-04/lab-04-composite-pattern-flannel/op.hpp
- /home/csmajs/cloez001/lab-04/lab-04-composite-pattern-flannel/op_test.hpp
  /home/csmajs/cloez001/lab-04/lab-04-composite-pattern-flannel/unit_test.cpp
  googletest/googletest/include/gtest/gtest-death-test.h
  googletest/googletest/include/gtest/gtest-matchers.h
