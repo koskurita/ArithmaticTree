@@ -74,10 +74,22 @@ TEST(DivTest, DivideNums){
         Base *opNum2 = new Op(2);
         Div *tester = new Div(opNum1, opNum2);
 
-        EXPECT_EQ(2, tester->evaluate());
-	EXPECT_EQ(1, tester->evaluate());
- 
-       delete opNum1, opNum2;
+        EXPECT_EQ(2, tester->evaluate());	
+	EXPECT_EQ(1, tester->evaluate()); 
+	delete opNum1, opNum2, tester;
+}
+
+
+// Divide using zero
+TEST(DivTest, DivideWithZero){
+        Base *opNum1 = new Op(4);
+        Base *opNum2 = new Op(0);
+        Div *tester = new Div(opNum1, opNum2);
+	Div *tester1 = new Div(opNum2, opNum1);
+
+        EXPECT_EQ(1, tester->evaluate());
+        EXPECT_EQ(0, tester1->evaluate()); 
+        delete opNum1, opNum2;
 }
 
 
