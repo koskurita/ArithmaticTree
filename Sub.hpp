@@ -21,11 +21,11 @@ public:
 
 
     virtual double evaluate(){
-        return val1->evaluate() - val2->evaluate();
+        return num1 - num2;
     }
 
     virtual std::string stringify(){        
-	return (val1->stringify() + " - " + val2->stringify());	
+	return (str1 + " - " + str2);	
     }
 
 };

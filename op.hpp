@@ -14,7 +14,7 @@ public:
 	virtual std::string stringify() {
 		std::string numString = std::to_string(this->value);
 		int str_length = numString.length();
-		
+		// EX: 6.000000 to 6.0	
 		numString = numString.substr(0,str_length-5);  
 		return numString;
 	}

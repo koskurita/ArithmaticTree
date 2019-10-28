@@ -32,7 +32,7 @@ TEST(OpTest, StringThree){
 TEST(AddTest, AddOperands){
 	Base *opNum1 = new Op(4);
 	Base *opNum2 = new Op(5);
-	Add *tester = new Add(opNum1, opNum2);
+	Base *tester = new Add(opNum1, opNum2);
 
 	EXPECT_EQ(9, tester->evaluate());
 	EXPECT_EQ(3, tester->evaluate());
@@ -44,7 +44,7 @@ TEST(AddTest, AddOperands){
 TEST(AddTest, AddZeros){
 	Base *opNum1 = new Op(0);
 	Base *opNum2 = new Op(0);
-	Add *tester = new Add(opNum1, opNum2);
+	Base *tester = new Add(opNum1, opNum2);
 	
 	EXPECT_EQ(0, tester->evaluate());
 	EXPECT_EQ(1, tester->evaluate());
@@ -57,7 +57,7 @@ TEST(AddTest, AddZeros){
 TEST(AddTest, AddWithNegative){
         Base *opNum1 = new Op(1);
         Base *opNum2 = new Op(-4);
-        Add *tester = new Add(opNum1, opNum2);
+        Base *tester = new Add(opNum1, opNum2);
 
         EXPECT_EQ(-3, tester->evaluate());
 	EXPECT_EQ(5, tester->evaluate());
@@ -70,7 +70,7 @@ TEST(AddTest, AddWithNegative){
 TEST(DivTest, DivideNums){
 	Base *opNum1 = new Op(4);
         Base *opNum2 = new Op(2);
-        Div *tester = new Div(opNum1, opNum2);
+        Base *tester = new Div(opNum1, opNum2);
 
         EXPECT_EQ(2, tester->evaluate());	
 	EXPECT_EQ(1, tester->evaluate()); 
@@ -82,8 +82,8 @@ TEST(DivTest, DivideNums){
 TEST(DivTest, DivideWithZero){
         Base *opNum1 = new Op(4);
         Base *opNum2 = new Op(0);
-        Div *tester = new Div(opNum1, opNum2);
-	Div *tester1 = new Div(opNum2, opNum1);
+        Base *tester = new Div(opNum1, opNum2);
+	Base *tester1 = new Div(opNum2, opNum1);
 
         EXPECT_EQ(1, tester->evaluate());
         EXPECT_EQ(0, tester1->evaluate()); 
@@ -91,11 +91,21 @@ TEST(DivTest, DivideWithZero){
 }
 
 
+// Make sure we get Division string
+TEST(DivTest, DivideString){
+	Base *opNum1 = new Op(4);
+        Base *opNum2 = new Op(2);
+        Base *tester = new Div(opNum1, opNum2);
+
+        EXPECT_EQ("4.0 / 2.0", tester->stringify());
+		
+}
+
 // Use powers and exponents: num1^num2
 TEST(PowTest, PowerMultiplication){
 	Base *opNum1 = new Op(2);
         Base *opNum2 = new Op(4);
-        Pow *tester = new Pow(opNum1, opNum2);
+        Base *tester = new Pow(opNum1, opNum2);
 
 	EXPECT_EQ(16, tester->evaluate());
         EXPECT_EQ("2.0**4.0", tester->stringify());
