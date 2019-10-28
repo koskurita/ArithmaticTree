@@ -14,6 +14,10 @@ base.hpp
 base.hpp
 /home/csmajs/cloez001/lab-04/lab-04-composite-pattern-flannel/base.hpp
 
+/home/csmajs/cloez001/lab-04/lab-04-composite-pattern-flannel/Pow.hpp
+base.hpp
+/home/csmajs/cloez001/lab-04/lab-04-composite-pattern-flannel/base.hpp
+
 /home/csmajs/cloez001/lab-04/lab-04-composite-pattern-flannel/base.hpp
 string
 -
@@ -21,6 +25,8 @@ string
 /home/csmajs/cloez001/lab-04/lab-04-composite-pattern-flannel/op.hpp
 base.hpp
 /home/csmajs/cloez001/lab-04/lab-04-composite-pattern-flannel/base.hpp
+string.h
+-
 
 /home/csmajs/cloez001/lab-04/lab-04-composite-pattern-flannel/unit_test.cpp
 op.hpp
@@ -29,6 +35,8 @@ Add.hpp
 /home/csmajs/cloez001/lab-04/lab-04-composite-pattern-flannel/Add.hpp
 Div.hpp
 /home/csmajs/cloez001/lab-04/lab-04-composite-pattern-flannel/Div.hpp
+Pow.hpp
+/home/csmajs/cloez001/lab-04/lab-04-composite-pattern-flannel/Pow.hpp
 gtest/gtest.h
 /home/csmajs/cloez001/lab-04/lab-04-composite-pattern-flannel/gtest/gtest.h
 

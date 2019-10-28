@@ -3,6 +3,7 @@
 
 CMakeFiles/test.dir/unit_test.cpp.o: Add.hpp
 CMakeFiles/test.dir/unit_test.cpp.o: Div.hpp
+CMakeFiles/test.dir/unit_test.cpp.o: Pow.hpp
 CMakeFiles/test.dir/unit_test.cpp.o: base.hpp
 CMakeFiles/test.dir/unit_test.cpp.o: op.hpp
 CMakeFiles/test.dir/unit_test.cpp.o: unit_test.cpp

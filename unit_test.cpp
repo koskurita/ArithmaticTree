@@ -1,8 +1,7 @@
 #include "op.hpp"
-//#include "op_test.hpp"
 #include "Add.hpp"
 #include "Div.hpp"
-
+#include "Pow.hpp"
 #include "gtest/gtest.h"
 
 
@@ -23,9 +22,8 @@ TEST(OpTest, NumNotThree){
 
 // Test to see if we get the string type of our double
 TEST(OpTest, StringThree){
-	Base *opNum = new Op(3);
-	std::cout << "string: " << opNum->stringify();
-	EXPECT_EQ("3", opNum->stringify());
+	Base *opNum = new Op(3.0);
+	EXPECT_EQ("3.0", opNum->stringify());
 	delete opNum;
 }
 
@@ -89,7 +87,22 @@ TEST(DivTest, DivideWithZero){
 
         EXPECT_EQ(1, tester->evaluate());
         EXPECT_EQ(0, tester1->evaluate()); 
-        delete opNum1, opNum2;
+        delete opNum1, opNum2, tester,tester1;
+}
+
+
+// Use powers and exponents: num1^num2
+TEST(PowTest, PowerMultiplication){
+	Base *opNum1 = new Op(2);
+        Base *opNum2 = new Op(4);
+        Pow *tester = new Pow(opNum1, opNum2);
+
+	EXPECT_EQ(16, tester->evaluate());
+        EXPECT_EQ("2.0**4.0", tester->stringify());
+
+	delete opNum1, opNum2, tester;
+
+
 }
 
 

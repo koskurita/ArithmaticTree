@@ -7,24 +7,26 @@
 class Sub: public Base{
 
 private:
-    double num1, num2;
+	double num1, num2;
+  	std::string str1, str2;
 public:
 
     Sub(Base *val1, Base *val2): Base(){
         num1 = val1->evaluate();
         num2 = val2->evaluate();
+	str1 = val1->stringify();
+	str2 = val2->stringify();
+	
     }
 
 
     virtual double evaluate(){
-        return num1 - num2;
+        return val1->evaluate() - val2->evaluate();
     }
 
-    virtual std::string stringify(){
-        std::string newString;
-        newString = std::to_string(num1) + " - " + std::to_string(num2);
-        return newString;
-
+    virtual std::string stringify(){        
+	return (val1->stringify() + " - " + val2->stringify());	
     }
+
 };
 #endif  // __SUB_HPP__
